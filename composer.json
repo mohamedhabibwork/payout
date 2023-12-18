@@ -1,0 +1,33 @@
+{
+    "name": "mohamedhabibwork/payout",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Habib\\Payout\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Habib\\Payout\\Providers\\PayoutServiceProvider"
+            ],
+            "aliases": {
+                "HyperSplit": "Habib\\Payout\\Facades\\HyperSplit"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed Habib",
+            "email": "mohamedhabibwork@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": ">=7.0",
+        "ext-openssl": "*",
+        "ext-json": "*"
+    }
+}
